@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: #0a4b4b;
-    font-family: 'Times New Roman,' 'sans-serif';
+    font-family: "Times New Roman", sans-serif;
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
@@ -79,7 +79,7 @@ header h1 {
     border-width: 13px;
     border-color: #0a4b4b #161d3b #aef5cd #ebebeb;
 
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     box-shadow: 10px 10px 5px #677c84;
 
 }
@@ -96,7 +96,7 @@ header h1 {
     margin: 1rem 0;
 }
 
-portfolio-item p {
+.portfolio-item p {
     font-size: 1.2rem;
 }
 
