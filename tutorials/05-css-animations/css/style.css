@@ -122,3 +122,19 @@ body {
         color: #D3F9B5;
     }
 }
+
+.uma {
+    margin: auto;
+    text-align: center;
+    animation: grow 2s infinite alternate;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.1, 0.1);
+    }
+
+    100% {
+        transform: scale(15, 15);
+    }
+}
