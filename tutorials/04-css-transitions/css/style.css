@@ -1,0 +1,23 @@
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.square {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: aliceblue;
+    background-color: green;
+    padding: 15px;
+    border-radius: 10px;
+
+}
