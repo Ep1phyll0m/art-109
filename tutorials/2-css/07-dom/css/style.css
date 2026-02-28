@@ -58,3 +58,30 @@ main {
     max-width: 60rem;
     margin: 0 auto;
 }
+
+img {
+    width: 30rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#img1 {
+    position: absolute;
+    top: 25rem;
+    bottom: 10rem;
+}
+
+#img2 {
+    position: absolute;
+    top: 5rem;
+    left: 45rem;
+
+}
+
+#img3 {
+    position: absolute;
+    bottom: 5rem;
+    right: 3rem;
+}
