@@ -2,18 +2,28 @@
 
 
 :root {
-    --bg-color-1: #3A4E48;
+    --bg-color-1: #BEB0A7;
     --bg-color-2: #6A7B76;
-    --font: #BEB0A7;
+    --font: #040303;
     --accent-1: #8B9D83;
     --accent-2: #904a4f;
     --dark: #040303;
+
+    /* #3A4E48; */
 }
 
 
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~     CSS resets ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 
 * {
     margin: 0;
@@ -26,6 +36,13 @@ html {
     font-size: 100%;
 }
 
+/* make images responsive */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~     General CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 html {
@@ -35,186 +52,189 @@ html {
 body {
     background-color: var(--bg-color-1);
     color: var(--font);
-    font-family: "Old Standard TT", "Times New Roman";
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-align: justify;
-}
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* text-align: justify; */
 
-@media(max-width: 700px) {
-    body {
-        font-size: 1.3rem;
-    }
 }
 
 header {
-    padding: 6rem;
-    margin-bottom: 3rem;
-    background-color: #2c0c0f;
-    color: #aef5cd;
-    border-bottom: #ebebeb 1px solid;
-    font-family: 'Bentham', 'Times New Roman';
-    /* text-align: center;  */
+    padding: 5rem 2rem;
+    margin-bottom: 7rem;
+
 }
 
-@media (max-width: 700px) {
-    header {
-        padding-left: 2rem;
-    }
-}
-
-nav {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    /* background-color: #fff; */
+header h1 {
+    text-shadow: 0 1px 0px #8B9D83cc, 1px 0 0px #8B9D8399, 1px 2px 1px #8B9D83, 2px 1px 1px #8B9D83, 2px 3px 2px #8B9D83, 3px 2px 2px #8B9D83, 3px 4px 2px #8B9D83, 4px 3px 3px #8B9D83, 4px 5px 3px #8B9D83, 5px 4px 2px #8B9D83, 5px 6px 2px #8B9D83, 6px 5px 2px #8B9D83, 6px 7px 1px #8B9D83, 7px 6px 1px #8B9D83, 7px 8px 0px #8B9D83, 8px 7px 0px #8B9D83, 2px 2px 2px #8B9D8344;
 }
 
 nav a {
     text-decoration: none;
-    color: #aef5cd;
-    display: inline-block;
-    margin: 0 1rem;
+    color: (var(--font));
+    /* margin: 0 1rem; */
     transition: all .5s ease;
-
 }
 
 nav a:hover {
-    background-color: var(--accent-1);
-    /*transform: scale(1.3); */
+    color: var(--accent-2);
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 750px) {
-    nav a {
-        margin: 0 0.5rem;
+    .navbar {
+        align-items: flex-start;
     }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        align-self: flex-end;
+        border: none;
+        color: var(--font);
+        font-size: 3rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--font);
+        padding: 1rem;
+    }
+
+    .nav-menu a {
+        color: var(--bg-color-1);
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--font);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
 main {
     margin: 0;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1030px) {
     main {
         margin: 2rem;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     main {
         margin: 1rem;
     }
 }
 
-header h1 {
-    font-size: 3rem;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: var(--accent-1);
-
-}
-
-.about-section,
-.portfolio-section,
-.contact-section {
-    margin-bottom: 5rem;
-    font-family: 'Bentham', 'Times New Roman';
-}
-
 .about-content,
 .portfolio-content,
 .contact-content {
-    max-width: 50rem;
-    margin: 0 auto;
-    padding: 2rem 0;
+    max-width: 60rem;
+    margin: 0 auto 7rem auto;
 }
 
 .about-content h2,
 .portfolio-content h2,
 .contact-content h2 {
-    padding: 2rem 0;
+    margin: 2rem 0;
 }
 
 .portfolio-item {
-    margin-bottom: 5rem;
-    background-color: var(--bg-color-1);
-    padding: 4rem;
-    /* border: 2px #000 solid; */
-
-    border-style: solid;
-    border-width: 13px;
-    border-color: #0a4b4b #161d3b #aef5cd #ebebeb;
-
-    border-radius: 0.25rem;
-    box-shadow: 10px 10px 5px #677c84;
-
-}
-
-@media (max-width: 800px) {
-    .portfolio-item {
-        padding: 3rem;
-    }
-}
-
-
-@media (max-width: 600px) {
-    .portfolio-item {
-        padding: 2rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .portfolio-item {
-        padding: 3rem;
-    }
-}
-
-
-.portfolio-item img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    border-radius: 0.5rem;
-
-}
-
-.portfolio-item h3 {
-    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--font);
+    color: var(--bg-color-1);
 }
 
 .portfolio-item p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.about-section {
-    background-color: #fff;
+.portfolio-item h3 {
+    font-size: 1.3rem;
 }
 
-.portfolio-section {
-    background-color: var(--bg-color-2);
-    color: #aef5cd;
+.portfolio-item img {
+    border-radius: 0.3rem;
 }
 
 footer {
-    background-color: var(--dark);
-    /*color: var(--bg-color-1); */
-    color: #eee;
-    padding: 1rem;
-    text-align: end;
+    padding: 1rem 2rem;
 }
 
-footer p {
-    font-size: 1.2rem;
+footer img {
+    display: inline;
+    max-width: 2.5rem;
+    margin: 0 .5rem;
 }
 
+@media (max-width: 750px) {
+    footer p {
+        font-size: 1.2rem;
+    }
 
-/* style classes  */
 
-.accent-1 {
-    color: var(--accent-1);
+    footer img {
+        max-width: 2rem;
+        margin: 0 0.2rem;
+    }
 }
 
-.accent-2 {
-    color: var(--accent-2);
+@media (max-width: 450px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer img {
+        max-width: 1.5rem;
+        margin: 0 0.1rem;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ flex styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex-item-grid {
+    flex: 1 1 18rem;
+    /* box-sizing: border-box; */
 }
