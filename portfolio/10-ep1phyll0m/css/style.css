@@ -57,6 +57,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* text-align: justify; */
 
+
+
 }
 
 header {
@@ -261,4 +263,25 @@ footer img {
 .flex-item-grid {
     flex: 1 1 18rem;
     /* box-sizing: border-box; */
+}
+
+.box {
+    margin: 25px;
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border: solid black;
+    border-color: black;
+    float: left;
+}
+
+.box1 {
+    border-width: 3px 4px 3px 5px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+}
+
+.oddboxinner {
+    margin: 15px;
+    transform: rotate(-2deg);
 }
