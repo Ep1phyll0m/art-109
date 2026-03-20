@@ -1,0 +1,140 @@
+body {
+    animation: change-color 4s infinite alternate;
+
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #040303;
+    }
+
+    50% {
+        background-color: #3A4E48;
+    }
+
+    100% {
+        background-color: #6A7B76;
+    }
+}
+
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 80px auto;
+    animation: spin 3s infinite alternate;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0.5turn);
+    }
+
+    100% {
+        tranform: rotate(1turn);
+    }
+}
+
+.square {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: black;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: aliceblue;
+    background-color: green;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+
+}
+
+.button:hover {
+    background-color: rebeccapurple;
+    color: lightgoldenrodyellow;
+    transform: scale(1.5);
+}
+
+.loading {
+    background-color: green;
+    animation: stretch 5s 3 alternate;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
+
+.apple {
+    background-color: #46351D;
+    color: #D64045;
+    padding: 45px;
+    border-radius: 8rem;
+    text-align: center;
+    margin: 100px auto;
+    animation: swift 1s infinite alternate;
+    width: 7.5vw;
+}
+
+@keyframes swift {
+    0% {
+        transform: translate(60px, 150%);
+    }
+
+    100% {
+        transform: translate (150px, 5%);
+    }
+}
+
+.apple:hover {
+    /* color: #D3F9B5;*/
+    animation: color-shift 0.75s infinite alternate;
+}
+
+@keyframes color-shift {
+    0% {
+        color: #D64045;
+    }
+
+    100% {
+        color: #D3F9B5;
+    }
+}
+
+.uma {
+    margin: auto;
+    text-align: center;
+    animation: grow 2s infinite alternate;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.1, 0.1);
+    }
+
+    100% {
+        transform: scale(15, 15);
+    }
+}
