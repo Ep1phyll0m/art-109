@@ -1,50 +1,56 @@
-// console.log("Hallo");
+// // console.log("Hallo");
 
 
-// select html element
-const header = document.querySelector("h1");
-const changeHeaderButton = document.querySelector("#change-header-button");
-const changeThemeButton = document.querySelector("#change-theme-button");
-const img1 = document.querySelector("#img1");
-const img2 = document.querySelector("#img2");
-const img3 = document.querySelector("#img3");
+// function setup() {
+//     createcanvas(400, 400);
+//     background(225);
+// }
 
-// change header with button click
+// // select html element
+// const header = document.querySelector("h1");
+// const changeHeaderButton = document.querySelector("#change-header-button");
+// const changeThemeButton = document.querySelector("#change-theme-button");
+// const img1 = document.querySelector("#img1");
+// const img2 = document.querySelector("#img2");
+// const img3 = document.querySelector("#img3");
 
-changeHeaderButton.addEventListener("click", () => {
-    header.innerHTML = "POWW!!!"
-})
+// // change header with button click
 
-
-// toggle color theme
-
-// create function for changing button test
-function changeButtonText() {
-    if (document.body.classList.contains("dark")) {
-        changeThemeButton.textContent = "Switch to Light Theme";
-
-    } else {
-        changeThemeButton.textContent = "Switch to Dark Theme";
-    }
-}
+// changeHeaderButton.addEventListener("click", () => {
+//     header.innerHTML = "POWW!!!"
+// })
 
 
+// // toggle color theme
 
-//click event on button
-changeThemeButton.addEventListener("click", () => {
-    //add/remove dark class to body
-    document.body.classList.toggle("dark");
-    changeButtonText();
-})
+// // create function for changing button test
+// function changeButtonText() {
+//     if (document.body.classList.contains("dark")) {
+//         changeThemeButton.textContent = "Switch to Light Theme";
+
+//     } else {
+//         changeThemeButton.textContent = "Switch to Dark Theme";
+//     }
+// }
 
 
 
-///// toggle image visibility
+// //click event on button
+// changeThemeButton.addEventListener("click", () => {
+//     //add/remove dark class to body
+//     document.body.classList.toggle("dark");
+//     changeButtonText();
+// })
 
-img1.addEventListener("click", () => {
-    img2.classList.remove("hidden");
-})
 
-img2.addEventListener("click", () => {
-    img3.classList.remove("hidden");
-})
+
+// ///// toggle image visibility
+
+// img1.addEventListener("click", () => {
+//     img2.classList.remove("hidden");
+// })
+
+// img2.addEventListener("click", () => {
+//     img3.classList.remove("hidden");
+// })
+
