@@ -3,11 +3,15 @@ let yPos = 0 //stores lagging y position
 let easing = 0.05; //speed of ease 
 let canvas;
 
+function preload() {
+    img = loadImage('images/tbh.png');
+}
+
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
     canvas.style("z-index", -2);
-
+    describe('An image of the Tbh creature');
 }
 
 function windowResized() {
@@ -20,7 +24,8 @@ function draw() {
     xPos = xPos + ((mouseX - xPos) * easing)
     yPos = yPos + ((mouseY - yPos) * easing)
 
-    drawThing(xPos, yPos);
+    ////drawThing(xPos, yPos);
+    drawTbh(xPos, yPos);
 }
 
 function mouseMoved() {
@@ -44,4 +49,8 @@ function drawThing(_x, _y) {
     // strokeWeight(0);
     // fill(random(200, 255), random(200, 255), random(200, 255));
     // ellipse(_x, _y, 30, 30);
+}
+
+function drawTbh(_x, _y) {
+    image(img, _x + 10, _y, 90, 100, 5);
 }
