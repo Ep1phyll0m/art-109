@@ -1,4 +1,6 @@
-
+let xPos = 0 //stores lagging x position
+let yPos = 0 //stores lagging y position
+let easing = 0.05; //speed of ease 
 let canvas;
 
 function setup() {
@@ -14,15 +16,16 @@ function windowResized() {
 
 function draw() {
     //background(125);
-    // strokeWeight(0);
-    // fill(random(200, 255), random(200, 255), random(200, 255));
-    // ellipse(mouseX, mouseY, 30, 30);
+    clear();
+    xPos = xPos + ((mouseX - xPos) * easing)
+    yPos = yPos + ((mouseY - yPos) * easing)
 
+    drawThing(xPos, yPos);
 }
 
 function mouseMoved() {
-    drawThing(mouseX, mouseY);
-    drawThing(mouseX - 50, mouseY + 75);
+
+    //drawThing(mouseX - 50, mouseY + 75);
 }
 
 function drawThing(_x, _y) {
