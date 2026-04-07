@@ -1,0 +1,47 @@
+:root {
+    --tint: rgba(61, 255, 64, 0.947);
+}
+
+.jumping-glorp {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
+}
+
+.gnarp-council-div {
+    position: relative;
+    margin: 50px auto;
+    max-width: 750px;
+    font-size: 3rem;
+}
+
+.nyan-glorp {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+
+
+.variable-tint {
+    position: relative;
+    width: 640px;
+    margin: auto;
+}
+
+.variable-tint img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tint-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: var(--tint);
+    mix-blend-mode: multiply;
+}
