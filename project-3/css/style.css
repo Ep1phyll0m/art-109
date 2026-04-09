@@ -1,0 +1,31 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~     color palette        ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+:root {
+    --bg-color-1: #e7d7e0;
+    --bg-color-2: #6A7B76;
+    --font: #040303;
+    --accent-1: #8B9D83;
+    --accent-2: #904a4f;
+    --dark: #040303;
+
+    /* #3A4E48; */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~     General CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* text-align: justify; */
+
+
+
+}
