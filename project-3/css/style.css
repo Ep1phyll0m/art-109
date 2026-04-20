@@ -3,14 +3,47 @@
 
 :root {
     --bg-color-1: #e7d7e0;
-    --bg-color-2: #6A7B76;
+    --bg-color-2: #e5ebec;
     --font: #040303;
-    --accent-1: #8B9D83;
-    --accent-2: #904a4f;
+    --accent-1: #cda924;
+    --accent-2: #c48d22;
     --dark: #040303;
 
     /* #3A4E48; */
 }
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~     CSS resets ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+/* make images responsive */
+
+img {
+
+    /* display: block; */
+    max-width: 33%;
+}
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~     General CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -24,8 +57,13 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* text-align: justify; */
+    text-align: justify;
 
 
 
+}
+
+
+footer {
+    padding: 1rem 2rem;
 }
